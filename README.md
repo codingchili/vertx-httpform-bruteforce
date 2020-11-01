@@ -3,15 +3,17 @@ Vertx client to brute force http-post form, twice as fast as hydra.
 
 ### Building
 
-Modify Breaker.kt to update form parameters.
+Modify Breaker.kt to update hard-coded stuff like form parameters, target url, port etc.
 
 ```
 ./gradlew build
 ```
 
+This produces a jar file in build/lib.
+
 ### Usage
 
-Grab a session id and csrf token if required, can be done using tokens.sh
+Grab a session id and csrf token if required, example in tokens.sh. Make sure to verify that token is reusable and attached to the session used.
 
 ```
 . ./tokens.sh
