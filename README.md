@@ -38,3 +38,5 @@ If the server stops responding, recompile and set the wordlist offset.
 ### Performance
 
 Twice as fast as hydra, gets about 15-22k requests/minute on a local virtualbox target.
+
+Loads the whole wordlist in memory.. so prefer to filter into smaller lists, or submit a PR. :kissing_cat:
